@@ -1,0 +1,20 @@
+body {
+  font-family: var(--main-font);
+  color: var(--maincolor);
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.container {
+  display: flex;
+  width: 1200px;
+  flex-wrap: wrap;
+
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  margin-bottom: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+}

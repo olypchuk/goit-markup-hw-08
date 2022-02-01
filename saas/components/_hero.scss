@@ -1,0 +1,24 @@
+.hero {
+  text-align: center;
+  padding: 0;
+}
+.background-hero {
+  height: 600px;
+  max-width: 1600px;
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+  background-image: url('../images/background-image.png');
+  margin: auto;
+}
+.background-hero_title {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 136%;
+  color: var(--backgroundcolor);
+
+  padding-top: 200px;
+  max-width: 700px;
+  margin-right: auto;
+  margin-left: auto;
+}

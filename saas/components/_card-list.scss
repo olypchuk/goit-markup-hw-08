@@ -1,0 +1,65 @@
+.cards-section {
+  padding-top: 0px;
+}
+.cards-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.card-full {
+  justify-content: center;
+  margin: 15px;
+  outline: 1px solid #eeeeee;
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow var(--transition);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.card-full__name {
+  padding: 20px 24px;
+}
+.card-full__title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 200%;
+}
+.card-full__text {
+  margin-top: 4px;
+  font-size: 16px;
+  line-height: 187%;
+  color: var(--maincolor);
+}
+.card-full__thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-full__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform var(--transition);
+  background: rgba(33, 150, 243, 0.9);
+  padding: 63px 24px;
+  width: 100%;
+  height: 100%;
+  transform: translatey(101%);
+  .card-full:hover & {
+    transform: translatey(0);
+    // .card-full:hover .p-overlay {
+    // transform: translatey(0);
+  }
+}
+.card-full__descr {
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
+}

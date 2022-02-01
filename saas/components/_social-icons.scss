@@ -1,0 +1,27 @@
+.icons-list {
+  display: flex;
+  justify-content: center;
+}
+.social-icon {
+  margin-top: 16px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: #afb1b8;
+  transition: fill var(--transition), background-color var(--transition);
+  &:hover {
+    background-color: var(--accentcolor);
+    fill: currentColor;
+  }
+  & + & {
+    margin-left: 10px;
+  }
+}
+.social-icon__link {
+  width: 20px;
+  height: 20px;
+}

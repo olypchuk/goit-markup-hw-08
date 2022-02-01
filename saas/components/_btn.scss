@@ -1,0 +1,21 @@
+.btn {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 187%;
+  text-align: center;
+
+  margin-top: 40px;
+
+  padding: 10px 32px;
+  color: var(--backgroundcolor);
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: background-color var(--transition), box-shadow var(--transition);
+  &:hover,
+  &:focus {
+    background-color: var(--hovercolor);
+  }
+}

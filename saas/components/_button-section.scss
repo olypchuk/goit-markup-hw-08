@@ -1,0 +1,31 @@
+.button-section {
+  padding-bottom: 50px;
+}
+.button-section__wrap {
+  display: flex;
+  justify-content: center;
+}
+.button {
+  padding: 6px 22px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 162%;
+  transition: color var(--transition), background-color var(--transition),
+    box-shadow var(--transition);
+  color: var(--secondarycolor);
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  &--all,
+  &:focus,
+  &:hover {
+    color: var(--backgroundcolor);
+    background-color: var(--accentcolor);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+.button-section__item:not(:first-child) {
+  margin-left: 8px;
+}
