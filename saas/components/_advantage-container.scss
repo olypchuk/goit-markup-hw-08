@@ -3,21 +3,33 @@
 }
 
 .advantage__list {
-  margin-top: 0;
-  display: flex;
-  justify-content: center;
-}
-
-.advantage__container {
-  width: 270px;
-  border-radius: 4px;
-  & + & {
-    margin-left: 30px;
+  margin: -15px;
+  @media screen and(min-width:768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
-.advantage__icon {
-  padding: 25px 100px;
+.advantage__container {
+  border-radius: 4px;
+  margin: 15px;
+  @media screen and(min-width:768px) {
+    width: calc(100% / 2 - 30px);
+  }
+  @media screen and(min-width:1200px) {
+    width: calc(100% / 4 - 30px);
+  }
+}
+.advantage__wrap {
+  display: flex;
+  flex-wrap: wrap;
   background: #f5f4fa;
+  justify-content: center;
+  padding: 25px 0px;
+}
+.advantage__icon {
+  width: 70px;
+  height: 70px;
 }
 
 .advantage__second-title {

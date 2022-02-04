@@ -3,22 +3,44 @@
   padding: 0;
 }
 .background-hero {
-  height: 600px;
-  max-width: 1600px;
-  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
-  background-image: url('../images/background-image.png');
+  height: 400px;
+  background-image: url('../../images/Headerimg-mob-1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-grow: 1;
   margin: auto;
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
+    height: 600px;
+    max-width: 1600px;
+    // background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/Img.jpg');
+  }
 }
 .background-hero_title {
   text-align: center;
   text-transform: uppercase;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 136%;
   color: var(--backgroundcolor);
-
-  padding-top: 200px;
-  max-width: 700px;
   margin-right: auto;
   margin-left: auto;
+
+  font-size: 26px;
+  font-weight: 900;
+  line-height: calc(42 / 26);
+  letter-spacing: 0.06em;
+
+  padding-top: 118px;
+  max-width: 360px;
+
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 136%;
+
+    padding-top: 200px;
+    max-width: 700px;
+  }
 }
