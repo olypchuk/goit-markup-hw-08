@@ -21,10 +21,12 @@
   }
 }
 .advantage__wrap {
-  display: flex;
-  flex-wrap: wrap;
+  text-align: center;
+  // display: flex;
+  // flex-wrap: wrap;
+  // justify-content: center;
   background: #f5f4fa;
-  justify-content: center;
+
   padding: 25px 0px;
 }
 .advantage__icon {
@@ -38,6 +40,9 @@
   font-size: 14px;
   line-height: 114%;
   margin-top: 30px;
+  @media screen and(max-width:767px) {
+    text-align: center;
+  }
 }
 .advantage__text {
   font-size: 14px;

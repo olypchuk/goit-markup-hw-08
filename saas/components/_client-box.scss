@@ -13,6 +13,9 @@
   }
 }
 .client-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   cursor: pointer;
@@ -38,11 +41,14 @@
   }
 }
 .client-box__icon {
-  padding: 16px 52px;
-  @media screen and(min-width:768px) {
-    padding: 16px 60px;
-  }
-  @media screen and(min-width:1200px) {
-    padding: 16px 32px;
-  }
+  width: 106px;
+  height: 60px;
 }
+
+//   @media screen and(min-width:768px) {
+//     // padding: 16px 60px;
+//   }
+//   @media screen and(min-width:1200px) {
+//     // padding: 16px 32px;
+//   }
+// }

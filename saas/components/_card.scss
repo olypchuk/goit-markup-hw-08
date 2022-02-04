@@ -1,10 +1,11 @@
 .cardset {
-  display: flex;
-  background-color: blue;
-  margin: -15px;
   @media screen and(min-width:768px) {
     display: flex;
     flex-wrap: wrap;
+    margin: -15px;
+  }
+  @media screen and(min-width:1200px) {
+    flex-wrap: nowrap;
   }
 }
 .card {
@@ -14,13 +15,18 @@
   border-radius: 0px 0px 4px 4px;
   width: 100%;
 
+  @media screen and(max-width:767px) {
+    &:not(:first-child) {
+      margin-top: 30px;
+    }
+  }
   @media screen and(min-width:768px) {
-    width: calc((100%-30px) / 2);
+    width: calc((100% / 2 - 30px));
+
+    margin: 15px;
   }
   @media screen and(min-width:1200px) {
     width: calc((100%-30px) / 4);
-
-    // width: calc((100%-30px) / 4);
     // &:first-child {
     //   margin-left: 0;
     // }
