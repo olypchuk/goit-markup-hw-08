@@ -5,8 +5,11 @@
   line-height: 119%;
   text-decoration: none;
   color: var(--secondarycolor);
-  padding-top: 24px;
-  padding-bottom: 25px;
+  // padding: 16px 0 16px 15px;
+  @media screen and(min-width:768px) {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
 .logo__web {
   color: var(--accentcolor);

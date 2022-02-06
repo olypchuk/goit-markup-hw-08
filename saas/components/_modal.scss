@@ -18,7 +18,7 @@
 
 .modal {
   position: fixed;
-  width: 528px;
+
   /* height: 581px; */
   top: 50%;
   left: 50%;
@@ -29,6 +29,17 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 40px;
+  @media screen and(max-width:479px) {
+    width: 90vw;
+  }
+
+  @media screen and(min-width:480px) {
+    width: 450px;
+  }
+
+  @media screen and(min-width:1200px) {
+    width: 528px;
+  }
 }
 
 .modal__title {

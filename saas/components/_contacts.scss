@@ -35,8 +35,18 @@
 // }
 // 2 variant
 .nav-contacts {
-  display: flex;
-  margin-left: auto;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-left: auto;
+    flex-direction: column;
+    padding: 21px 0;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+  }
 }
 .nav-contacts__contacts {
   display: flex;
@@ -59,12 +69,20 @@
 .nav-contacts__list {
   margin-left: 0px;
   align-items: baseline;
+
   &:hover,
   &:focus {
     transition-property: fill;
     fill: var(--accentcolor);
   }
-  &:last-child {
-    margin-left: 50px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    & + & {
+      margin-top: 10px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    &:last-child {
+      margin-left: 30px;
+    }
   }
 }

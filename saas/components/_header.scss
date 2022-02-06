@@ -3,12 +3,22 @@
   border-bottom-style: solid;
   border-bottom-color: #ececec;
 }
+.header-container {
+  @media screen and(min-width:768px) {
+    display: flex;
+  }
+}
 .nav {
   display: flex;
   background-color: var(--backgroundcolor);
 }
 
 .nav-list {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+  }
   display: flex;
   flex-direction: row;
   margin-left: 93px;
@@ -50,4 +60,25 @@
     background-color: var(--accentcolor);
     border-radius: 2px;
   }
+}
+.menu-button {
+  @media screen and(min-width:768px) {
+    display: none;
+  }
+  width: 40px;
+  height: 40px;
+
+  margin-left: auto;
+  transition: var(--transition);
+  &:hover,
+  &:focus {
+    color: var(--accentcolor);
+    fill: currentColor;
+  }
+}
+.menu-button_icon {
+  // fill: currentColor;
+  // color: black;
+  width: 40px;
+  height: 40px;
 }
