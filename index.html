@@ -15,12 +15,47 @@
 </head>
 <body>
     <header class="header">
+        <div class="mob is-hidden is-open" data-menu>
+            <div class="mob-menu__nav-wrap">
+                <ul class="mob-menu">
+                    <li class="mob-menu__list-item"><a href="./index.html " class="mob-menu__list--link">Студия</a>
+                    </li>
+                    <li class="mob-menu__list-item"><a href="./portfolio.html" class=" mob-menu__list--link">Портфолио</a>
+                    </li>
+                    <li class="mob-menu__list-item"><a href="./game.html" class="mob-menu__list--link">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="mob-menu__contact-wrap">
+                <ul class="mob-menu__contact">
+                    <li class="mob-menu__tel"><a href="tel:+380961111111" class="mob-menu__tel--link">+38
+                            096 111 11 11</a></li>
+                    <li class="mob-menu__site"><a href="mailto:info@devstudio.com"
+                            class="mob-menu__site--link">info@devstudio.com</a></li>
+                </ul>
+                <ul class="mob-menu__list">
+                    <li class="mob-menu__socials"><a class="mob-menu__link" href="http://">Instagram</a></li>
+                    <li class="mob-menu__socials"><a class="mob-menu__link" href="http://">Twitter</a></li>
+                    <li class="mob-menu__socials"><a class="mob-menu__link" href="http://">Facebook</a></li>
+                    <li class="mob-menu__socials"><a class="mob-menu__link" href="http://">LinkedIn</a></li>
+                </ul>
+            </div>
+            <button type="button" class="menu-close-btn" data-menu-close>
+                <svg class="menu-close-btn__icon">
+                    <use href="./images/symbol-defs.svg#icon-close_40px" widht="40" height="40"></use>
+                </svg>
+            </button>
+        </div>
         <div class="container header-container">
         <nav class="nav">
            <a href="./index.html" class="logo"><span class="logo logo__web">Web</span>Studio</a>
            <div class="menu-button">
-               <!-- <button type="button"> -->
-               <svg class="menu-button_icon"><use href="./images/symbol-defs.svg#icon-menu_40px"></use></svg>
+               <button type="button" class="menu-button__button" data-menu-open>
+               <svg class="menu-button_icon"><use href="./images/symbol-defs.svg#icon-menu_40px"></use></svg></button></div>
+                <ul class="nav-list">
+                    <li class="nav nav-list_item"><a href="./index.html " class="nav-list__link current">Студия</a></li>
+                    <li class="nav nav-list_item"><a href="./portfolio.html" class="nav-list__link">Портфолио</a></li>
+                    <li class="nav nav-list_item"><a href="./game.html" class="nav-list__link">Контакты</a></li>
+                </ul>
                
         </nav>
                   <ul class="nav-contacts">
@@ -33,38 +68,32 @@
             </svg>+38 096 111 11 11</a></li>
         </ul>
         </div>
+
+
     </header>
     <!-- main ------------------>
     <main>
-        <div class="mob">
-            <ul class="mob-menu">
-                <li class="mob-menu__list-item"><a href="./index.html " class= "mob-menu__list--link">Студия</a>
-                </li>
-                <li class="mob-menu__list-item"><a href="./portfolio.html" class=" mob-menu__list--link">Портфолио</a>
-                </li>
-                <li class="mob-menu__list-item"><a href="./game.html" class="mob-menu__list--link">Контакты</a></li>
-            </ul>
-            <ul class="mob-menu__contact">
-                <li class="mob-menu__tel"><a href="tel:+380961111111" class="mob-menu__tel--link">+38
-                        096 111 11 11</a></li>
-                <li class="mob-menu__site"><a href="mailto:info@devstudio.com"
-                        class="mob-menu__site--link">info@devstudio.com</a></li>
-                
-            </ul>
-            <ul class="mob-menu__list">
-                <li class="mob-menu__socials"><a class="mob-menu__link" href="http://">Instagram</a></li>
-                <li class="mob-menu__socials"><a class="mob-menu__link" href="http://">Twitter</a></li>
-                <li class="mob-menu__socials"><a class="mob-menu__link" href="http://">Facebook</a></li>
-                <li class="mob-menu__socials"><a class="mob-menu__link" href="http://">LinkedIn</a></li>
-            </ul>
+
+        <!-- <button type="button" class="connect__btn btn" data-modal-open>
+            онлайн-запись
+        </button>
         </div>
+        <button type="button" class="menu-open-btn" data-menu-open>O</button>
+        </div>
+        <div class="mob-menu is-hidden" data-menu>
+            <div class="container">
+                <div class="mob-menu-top">
+                    <button type="button" class="menu-close-btn" data-menu-close>
+                        X
+                    </button> -->
+                    
+                    <!-- <div class="container"> -->
+
+     
+    <!-- </div> -->
         <!-- </button> -->
-        </div>
-        <ul class="nav-list">
-            <li class="nav nav-list_item"><a href="./index.html " class="nav-list__link current">Студия</a></li>
-            <li class="nav nav-list_item"><a href="./portfolio.html" class="nav-list__link">Портфолио</a></li>
-            <li class="nav nav-list_item"><a href="./game.html" class="nav-list__link">Контакты</a></li>
-        </ul>
+      
+       
         <!-- герой -->
         <section class="hero section">
            <div class="background-hero"><div class="container">
@@ -276,6 +305,7 @@
     </div>
         </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 </html>

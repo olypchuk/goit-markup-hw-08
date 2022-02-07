@@ -44,6 +44,10 @@ img {
   height: auto;
 }
 
+button {
+  border: none;
+}
+
 body {
   font-family: var(--main-font);
   color: var(--maincolor);
@@ -121,6 +125,7 @@ body {
 
 .nav {
   display: flex;
+  align-items: center;
   background-color: var(--backgroundcolor);
 }
 
@@ -292,14 +297,61 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+}
+
 .mob {
-  border: 1px solid teal;
+  position: fixed;
   background: #fff;
+  width: 100vw;
   height: 100vh;
   z-index: 10;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  transform: translateX(0);
+  transition: transform var(--transition);
+}
+
+.mob.is-hidden {
+  transform: translateX(100%);
+}
+
+@media screen and (min-width: 768px) {
+  .mob {
+    display: none;
+  }
+}
+
+.mob .header-container {
+  display: none;
+}
+
+.menu-button__button {
+  border: none;
+  background: transparent;
+}
+
+.menu-close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: transparent;
+  color: var(--accentcolor);
+}
+
+.menu-close-btn__icon {
+  width: 40px;
+  height: 40px;
+  transition: fill var(--transition);
+}
+
+.menu-close-btn__icon:hover, .menu-close-btn__icon:focus {
+  fill: currentColor;
 }
 
 .mob-menu {
@@ -314,9 +366,14 @@ body {
   margin: 32px 0;
 }
 
+.mob-menu__list-item:first-child {
+  margin: 0;
+}
+
 .mob-menu__list--link {
   padding: 16px 0;
   color: var(--secondarycolor);
+  transition: color var(--transition);
 }
 
 .mob-menu__list--link:hover, .mob-menu__list--link:focus {
@@ -344,6 +401,7 @@ body {
   font-weight: 500;
   line-height: 1.16;
   letter-spacing: 0.02em;
+  margin-bottom: 64px;
 }
 
 .mob-menu__site--link {
@@ -360,6 +418,11 @@ body {
   font-size: 18px;
   font-weight: 500;
   line-height: 1.22;
+}
+
+.mob-menu__socials:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  padding-right: 10px;
 }
 
 .mob-menu__link {
@@ -1028,6 +1091,7 @@ body {
 
 .modal {
   position: fixed;
+  height: auto;
   /* height: 581px; */
   top: 50%;
   left: 50%;
