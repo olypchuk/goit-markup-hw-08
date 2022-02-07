@@ -1223,8 +1223,19 @@ body {
   border: 1px solid #212121;
   fill: transparent;
   border-radius: 2px;
-  margin-left: 7px;
   transition: fill var(--transition), background-color var(--transition), border var(--transition);
+}
+
+@media screen and (min-width: 300px) {
+  .checkbox__icon {
+    width: 18px;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .checkbox__icon {
+    width: 15px;
+  }
 }
 
 .checkbox__input:checked + .checkbox__icon {
@@ -1236,14 +1247,16 @@ body {
 .checkbox__link {
   text-decoration: underline;
   color: var(--accentcolor);
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
 }
 
 .checkbox__text {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: #757575;
-  text-align: center;
   margin-left: 7px;
 }
 
