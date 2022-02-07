@@ -179,6 +179,12 @@ body {
   border-radius: 2px;
 }
 
+@media screen and (max-width: 1199px) {
+  .current:before {
+    bottom: -3px;
+  }
+}
+
 .menu-button {
   width: 40px;
   height: 40px;
@@ -284,6 +290,80 @@ body {
   .nav-contacts__list:last-child {
     margin-left: 30px;
   }
+}
+
+.mob {
+  border: 1px solid teal;
+  background: #fff;
+  height: 100vh;
+  z-index: 10;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+  display: flex;
+  flex-direction: column;
+}
+
+.mob-menu {
+  padding: 48px 0 0 40px;
+}
+
+.mob-menu__list-item {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin: 32px 0;
+}
+
+.mob-menu__list--link {
+  padding: 16px 0;
+  color: var(--secondarycolor);
+}
+
+.mob-menu__list--link:hover, .mob-menu__list--link:focus {
+  color: var(--accentcolor);
+}
+
+.mob-menu__contact {
+  padding-left: 40px;
+}
+
+.mob-menu__tel {
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  margin-bottom: 32px;
+}
+
+.mob-menu__tel--link {
+  color: var(--accentcolor);
+}
+
+.mob-menu__site {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+}
+
+.mob-menu__site--link {
+  color: var(--maincolor);
+}
+
+.mob-menu__list {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 48px;
+}
+
+.mob-menu__socials {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.22;
+}
+
+.mob-menu__link {
+  color: var(--accentcolor);
 }
 
 .hero {

@@ -9,3 +9,8 @@
   --main-font: 'roboto', sans-serif;
   --secondary-font: 'raleway', sans-serif;
 }
+@mixin font($fz, $fw, $lh) {
+  font-size: $fz;
+  font-weight: $fw;
+  line-height: $lh;
+}

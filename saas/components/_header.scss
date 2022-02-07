@@ -59,6 +59,9 @@
     height: 4px;
     background-color: var(--accentcolor);
     border-radius: 2px;
+    @media screen and (max-width: 1199px) {
+      bottom: -3px;
+    }
   }
 }
 .menu-button {
