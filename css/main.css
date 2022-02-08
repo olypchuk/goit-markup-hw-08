@@ -1017,6 +1017,12 @@ body {
   cursor: pointer;
 }
 
+@media screen and (max-width: 380px) {
+  .button {
+    padding: 4px 10px;
+  }
+}
+
 .button--all, .button:focus, .button:hover {
   color: var(--backgroundcolor);
   background-color: var(--accentcolor);
