@@ -125,9 +125,10 @@
   
  <section class="about section"><h3 class="title about__title">Чем мы занимаемся</h3>
     <ul class="images container">
-      <li class="images__list"><img src="./images/computer.jpg" alt="computer" width="370"><div class="backdrop"><span class="backdrop__text">Десктопные приложения</span></div></li>
-        <li class="images__list"><img src="./images/phone.jpg" alt="phone" width="370"><div class="backdrop"><span class="backdrop__text">Мобильные приложения</span></div></li>
-        <li class="images__list"><img src="./images/tablet.jpg" alt="tablet" width="370"><div class="backdrop"><span class="backdrop__text">Дизайнерские решения</span></div></li>
+      <li class="images__list">
+          <img srcset="./images/computer.jpg 1x, ./images/computer@2x.jpg 2x " src="./images/computer.jpg" alt="computer" width="370"><div class="backdrop"><span class="backdrop__text">Десктопные приложения</span></div></li>
+        <li class="images__list"><img srcset="./images/phone.jpg 1x, ./images/phone@2x.jpg 2x" src="./images/phone.jpg" alt="phone" width="370"><div class="backdrop"><span class="backdrop__text">Мобильные приложения</span></div></li>
+        <li class="images__list"><img srcset="./images/tablet.jpg 1x, ./images/tablet@2x.jpg 2x" src="./images/tablet.jpg" alt="tablet" width="370"><div class="backdrop"><span class="backdrop__text">Дизайнерские решения</span></div></li>
     </ul></section>
 
 
@@ -136,7 +137,13 @@
             <h2 class=" title team__title">Наша команда</h2>
                <div class="container">
                 <ul class="cardset">
-                    <li class="card"><a href=""><img src="./images/demianenko.jpg" alt="demianenko" width="270" height="260">
+                    <li class="card"><a href="">
+                        <picture>
+                            <source media="(min-width:1200px)" srcset="./images/first-img-d.jpg 1x, ./images/first-img-d@2x.jpg 2x"/>
+                            <source media="(min-width:768px)" srcset="./images/first-img-tab.jpg 1x,./images/first-img-tab@2x.jpg 2x"/>
+                            <source media="(min-width:320px )" srcset="./images/first-img-mob.jpg 1x,./images/first-img-mob@2x.jpg 2x">
+                        <img 
+                        src="./images/first-img-d.jpg" alt="demianenko" width="270" height="260"></picture>
                         <div class="card__wrap"><h3 class="card__title">Игорь Демьяненко</h3>
                             <p class="card__text">Product Designer</p>
                         <div class="icons-list"><div class="icons-list social-icon">
@@ -149,7 +156,14 @@
                                         <svg class="social-icon__link"><use href="./images/symbol-defs.svg#icon-linkedin-1"></use></svg></div>
                         </div></div></a>
                                         </li>
-                                        <li class="card"><a href=" "><img src="./images/repina.jpg" alt="repina" width="270">
+                                        <li class="card"><a href=" ">
+                                            <picture>
+                                            <source media="(min-width:1200px)" srcset="./images/second-img-d.jpg 1x, ./images/second-img-d@2x.jpg 2x" />
+                                            <source media="(min-width:768px)" srcset="./images/second-img-tab.jpg 1x,./images/second-img-tab@2x.jpg 2x" />
+                                            <source media="(min-width:320px )" srcset="./images/second-img-mob.jpg 1x,./images/second-img-mob@2x.jpg 2x">
+                                            <img src="./images/second-img-d.jpg" alt="repina" width="270" height="260">
+                                        </picture>
+                                            
                        <div class="card__wrap"> <h3 class="card__title">Ольга Репина</h3>
                             <p class="card__text">Frontend Developer</p>
                             <div class="icons-list">
@@ -176,7 +190,13 @@
                             </div>
                             </div></a>
                             </li>
-                            <li class="card"><a href=" "><img src="./images/tarasov.jpg" alt="tarasov" width="270">
+                            <li class="card"><a href=" ">
+                                <picture>
+                                    <source media="(min-width:1200px)" srcset="./images/third-img-d.jpg 1x, ./images/third-img-d@2x.jpg 2x" />
+                                    <source media="(min-width:768px)" srcset="./images/third-img-tab.jpg 1x,./images/third-img-tab@2x.jpg 2x" />
+                                    <source media="(min-width:320px )" srcset="./images/third-img-mob.jpg 1x,./images/third-img-mob@2x.jpg 2x">
+                                    <img src="./images/third-img-d.jpg" alt="tarasov" width="270" height="260">
+                                </picture>
                         <div class="card__wrap"><h3 class="card__title">Николай Тарасов</h3>
                             <p class="card__text">Marketing</p><div class="icons-list">
                                 <div class="icons-list social-icon">
@@ -202,7 +222,13 @@
                             </div>
                             </div></a>
                             </li>
-                    <li class="card"><a href=" "><img src="./images/yermakov.jpg" alt="yermakov" width="270" >
+                    <li class="card"><a href=" "><picture>
+                        <source media="(min-width:1200px)" srcset="./images/fourth-img-d.jpg 1x, ./images/fourth-img-d@2x.jpg 2x" />
+                        <source media="(min-width:768px)" srcset="./images/fourth-img-tab.jpg 1x,./images/fourth-img-tab@2x.jpg 2x" />
+                        <source media="(min-width:320px )" srcset="./images/fourth-img-mob.jpg 1x,./images/fourth-img-mob@2x.jpg 2x">
+                        <img src="./images/fourth-img-d.jpg" alt="yermakov" width="270" height="260">
+                    </picture>
+                        
                         <div class="card__wrap"><h3 class="card__title">Михаил Ермаков</h3>
                             <p class="card__text">UI Designer</p><div class="icons-list">
                                 <div class="icons-list social-icon">
