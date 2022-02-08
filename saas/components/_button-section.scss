@@ -7,6 +7,7 @@
 }
 .button-section__list {
   display: flex;
+  flex-wrap: wrap;
 }
 .button {
   padding: 6px 22px;
@@ -31,4 +32,12 @@
 }
 .button-section__item:not(:first-child) {
   margin-left: 8px;
+}
+.button-section__item--wrap {
+  @media screen and(max-width:767px) {
+    margin: 15px 0 0 0px;
+    &:last-child {
+      margin-left: 8px;
+    }
+  }
 }

@@ -1001,6 +1001,7 @@ body {
 
 .button-section__list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .button {
@@ -1024,6 +1025,15 @@ body {
 
 .button-section__item:not(:first-child) {
   margin-left: 8px;
+}
+
+@media screen and (max-width: 767px) {
+  .button-section__item--wrap {
+    margin: 15px 0 0 0px;
+  }
+  .button-section__item--wrap:last-child {
+    margin-left: 8px;
+  }
 }
 
 .cards-section {
